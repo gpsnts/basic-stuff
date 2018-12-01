@@ -16,6 +16,8 @@ function init() {
     document.getElementById("status").innerHTML = "";
     document.getElementById("page-title").style.backgroundColor = "#d17272"
     document.getElementById("page-sub-title").style.backgroundColor = "#d17272";
+    document.getElementById("restart").textContent = "";
+    document.getElementById("restart").textContent = "New colors?";
     
     createSquares();
     addresColors();
@@ -33,6 +35,8 @@ function verifyIfWon() {
                 document.getElementById("page-title").style.backgroundColor = answer;
                 document.getElementById("page-sub-title").style.backgroundColor = answer;
                 square.forEach(e => e.style.backgroundColor = answer);
+                document.getElementById("restart").textContent = "";
+                document.getElementById("restart").textContent = "Restart?";
             } else {
                 document.getElementById("status").innerHTML = "";
                 document.getElementById("status").innerHTML = "Try again";
