@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    background-color: #d17272;
+    margin: 0;
+}
+
+#page-title, #page-sub-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#page-sub-title {
+    font-size: calc(4em - 220px);
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    height: 50px;
+}
+
+#restart, #easy-mode, #hard-mode, #status {
+    font-family: 'Pacifico', cursive;
+    border: 0;
+    background-color: inherit;
+    height: 30px;
+    font-size: 20px;
+}
+
+#square {
+    background-color: black;
+    width: 30%;
+    margin: 1.66%;
+    padding: 0 0 30% 0;
+    float: left;
+    border-radius: 10%;
+}
+
+.nav-content:hover {
+    color: gray;
+}
